@@ -1,0 +1,111 @@
+p{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: normal;
+    font-size: 30px;
+    margin-left:10px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    color:rgb(54, 52, 87);
+    font-size:100px;
+    margin-bottom: 100px;
+    font-weight:900;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight:300;
+    margin-top:-80px;
+}
+
+.Normal{
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.Lightest{
+    font-weight: 100;
+}
+
+.Heaviest{
+    font-weight: 900;
+}
+
+.Italic{
+    font-style:italic;
+}
+.NThreeEm{
+    letter-spacing: -0.05em;
+}
+.OneEm{
+    letter-spacing:0.1em;
+}
+.FiveEm{
+    letter-spacing:0.195em;
+}
+
+.Lowercase{
+    text-transform:lowercase;
+}
+.Uppercase{
+    text-transform:uppercase;
+}
+.Capitalize{
+    text-transform:capitalize;
+}
+.Underline{
+    text-decoration:underline;
+}
+.Overline{
+    text-decoration:overline;
+}
+.Line-Through{
+    text-decoration:line-through;
+}
+.Heading{
+    background-color: rgb(168, 169, 224);
+    font-family: 'Raleway';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /**padding: 5% 5%; 
+    width: auto;
+    max-width: 90%;
+    line-height: auto; **/
+    align-self:center;
+    padding: 18px 30px;
+    margin: auto;
+    width:auto;
+}
+
+.Topbr {
+    border: 8px rgb(125, 177, 255) ;
+    color:rgb(43, 23, 34);
+    align-self:center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 18px 30px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width:980px;
+    margin-bottom: 70px;
+    margin-top:70px;
+ }
+.Text{
+    border: 8px rgb(125, 177, 255) ;
+    color:rgb(43, 23, 34);
+    align-self:center;
+    padding: 18px 30px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width:980px;
+    margin-bottom: 70px;
+}
+.Subtitle{
+                background-color: rgb(168, 169, 224);
+                font-style: italic;
+                width:300px;
+                padding: 14px 16px;
+                color:rgb(54, 52, 87);
+                font-size:35px;
+                margin-left:5px;
+}
