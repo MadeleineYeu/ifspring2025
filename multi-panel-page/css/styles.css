@@ -1,0 +1,137 @@
+html{
+    font-family: "Archivo Narrow", serif;
+}
+
+
+header{
+    /**rgba: red green blue alpha --> alpha represents transparency**/
+    background-color:rgba(255, 0, 0, 0.5);
+    padding-top:166px;
+    padding-bottom: 188px;
+    /** You could also do padding like this --> padding: 166px 0 188px 0 **/
+    /** background-image:url('../images/main-banner.jpg');**/
+    background-size: cover;
+    background-position: center;
+}
+/**Only center the h1 in the HEADER**/
+header h1{
+    text-align:center;
+        /**Let's add some space at the bottom of h1 by adjusting the bottom margin (third value, top right bottom left). This gives space between h1 and h2.**/
+    margin:0 0 16px 0;
+    font-size: 80px;
+    /**Line-height by default is NOT 1... it is around 1.6, so when we make it 1, we are making it single-spaced. 2 is double-spaced. **/
+    line-height: 1;
+    color: white;
+}
+
+header h2{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1;
+    color: white;
+}
+
+section{
+     /** Note: padding will only change the CONTENT and not the background. Margin changes both. We don't want the background size to change, so we will use padding. **/
+     padding:48px 0 0 0;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 38px 0;
+}
+
+p{
+    font-size: 18px;
+    line-height:1.4;
+}
+
+.p2{
+    margin-top: -2px;
+}
+
+.p3{
+    margin-top: -2px;
+}
+
+/**you can also do it like this, without making a class: section > div{**/
+section div.column{
+    width: 960px;
+    margin: auto;
+    padding: 0 0 38px 0;
+}
+section#intro{
+    background-color: rgb(145, 196, 232)
+}
+
+section#intro img{
+    width: 400px;
+    height: 300px;
+    float: right;
+    border: solid 1px black;
+    margin: 0 0 20px 38px;
+}
+
+section#middle{
+    /**background-color: rgba(255, 218, 181, 0.856);**/
+    background-color: rgb(36, 25, 21, 0.95);
+    color: white;
+}
+
+section#middle img{
+    width: 200px;
+    height: 150px;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: top;
+}
+
+.grid{
+    padding:0;
+    margin: 0;
+    margin-bottom: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid li{
+    display:block;
+    padding-bottom: 19px;
+}
+.grid p{
+    margin-left: -28px;
+    margin-right: 30px;
+}
+h4{
+    font-size: 20px;
+    margin: 0 0 -11px -28px;
+}
+section#end{
+    background-color: rgb(145, 196, 232);
+    padding-bottom: 36px;
+    color: black;
+}
+
+section#end p{
+    font-size: 26px;
+    text-align: center;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+footer{
+    background-color: rgb(239, 195, 74);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer div{
+    width: 960px;
+    margin: auto;
+}
+footer p{
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
