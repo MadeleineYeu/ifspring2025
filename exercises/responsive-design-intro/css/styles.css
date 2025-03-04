@@ -1,0 +1,23 @@
+img { 
+    max-width: 100%; }
+
+body{
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+    /**The max-width property overrules the width property when needed, so our page now has an upper width limit of 40rem for content:**/
+    max-width: 40rem;
+}
+html { font-size: 12pt; }
+
+@media (min-width: 640px) {
+    html { font-size: 16pt; }
+  }
+
+@media (min-width: 640px){
+    .two-columns-example{
+            display: flex;
+    }
+    .two-columns-example > *{
+            width:50%;
+    }
+}
