@@ -1,0 +1,58 @@
+body{
+    max-width:800px;
+    width: 90%;
+    margin: auto;
+}
+
+@media (min-width: 640px) {
+    html{background-color: #eaf6ff;}
+    h1{font-size:2.5rem}
+  }
+
+@media(max-width: 500px){
+    h1{font-size: 1.5rem}
+}
+
+#fixed-size-grid-items ul{
+    display: flex;
+    flex-wrap:wrap;
+    font-size:0.8rem;
+    padding-left: 0;
+}
+
+#fixed-size-grid-items aside{
+    width:170px;
+    margin:10px;
+}
+#fixed-size-grid-items li{
+    list-style: none;
+}
+
+#stretchable-grid-items li{
+    width:100%;
+    list-style:none;
+}
+
+/** From 640px to entire width, text should take up 25% (aka 4-across, large width) **/
+@media(min-width:640px){
+    #stretchable-grid-items li{width:25%}
+}
+
+/** From 480px to 640px, text should take up 50% (aka 2-across, medium width) **/
+@media(max-width:640px){
+    #stretchable-grid-items li{width:50%}
+}
+/** From 0px to 480px, text should take up 100% (aka 1-across, small width) **/
+@media(max-width:480px){
+        #stretchable-grid-items li{width:100%}
+}
+
+#stretchable-grid-items ul{
+    display:flex;
+    flex-wrap:wrap;
+    margin:1rem -10px;
+    padding:0;
+}
+#stretchable-grid-items aside{
+    margin:10px;
+}
