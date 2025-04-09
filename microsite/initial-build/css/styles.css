@@ -1,0 +1,325 @@
+body{
+    background-color: #0A122C;
+    /**background-color: rgb(216, 216, 255);**/
+    margin:0;
+    /**prevent horizontal scrolling**/
+    overflow-x: hidden;
+}
+
+.content{
+    max-width:1000px;
+    margin:auto;
+}
+
+.sidebar{
+    width:20%;
+    float:left;
+    margin-right:3%;
+    padding:0;
+    position:fixed;
+    width:200px;
+}
+.sidebar ul{
+    margin-top:0;
+    padding:0;
+    border-radius:10px;
+}
+.sidebar li{
+    list-style:none;
+    padding:0;
+    padding-left:18px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+
+.sidebar a {
+    display: block;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.sidebar a.Mimeograph{
+    color:black;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:23px;
+}
+
+.sidebar a{
+    color:white;
+}
+
+.sidebar a:hover{
+    font-weight:800;
+    color:black;
+}
+
+.sidebar li:nth-child(2):hover {
+    background-color: #F3E7D1;
+}
+.sidebar li:nth-child(3):hover {
+    background-color: #F3E7D1;
+}
+.sidebar li:nth-child(4):hover {
+    background-color: #F3E7D1;
+}
+.sidebar li:nth-child(5):hover {
+    background-color: #F3E7D1;
+}
+.sidebar li:nth-child(6):hover {
+    background-color: #F3E7D1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.topnav {
+    display: none;
+    background-color:#0A122C;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color:white;
+    padding:0;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.topnav a:hover{
+    text-decoration: underline;
+    color:#8ac9bc;
+}
+
+.BeigeB{
+    background-color: #F3E7D1;
+    border-radius: 10px;
+    max-width:800px;
+    text-align:left;
+    padding-top:5px;
+    /**prevents content that exceeds BeigeB container to overflow/be seen**/
+    overflow: hidden;
+    padding:40px;
+    margin-top:40px;
+    margin-left: 240px;
+}
+
+.BeigeB p{
+    font-size:20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.BeigeB img{
+    object-fit: cover;
+    width:100%;
+    height:450px;
+    border: solid 1px;
+    border-color:black;
+    border-radius: 8px;
+}
+
+.BeigeB iframe{
+    width:100%;
+    height:450px;
+    border: solid 1px;
+    border-color:black;
+    border-radius: 8px;
+}
+
+h1{
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:50px;
+    margin-top:15px;
+    /**prevent h1 from wrapping onto next line**/
+    white-space: nowrap;
+}
+
+h2{
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:50px;
+    margin-top:15px;
+    white-space: nowrap;
+    padding-top:20px;
+}
+
+@media(max-width:560px){
+    .topnav a{font-size:1.5vh}
+}
+
+@media(max-width:768px){
+    .sidebar {display: none;}
+    .BeigeB{margin-left: 0px; width:100%;box-sizing:border-box; margin-right:0; max-width:none;}
+    .BeigeB h1{font-size: clamp(10px, 6.5vw, 50px)}
+    .footer{width:100%; max-width: none; margin:0; box-sizing:border-box;}
+    .topnav {
+        display: flex;
+        /**evenly distribute space b/w links in topnav and adds equal space before first link and after last link**/
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0A122C;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+
+}
+
+@media(min-width: 768px) and (max-width:983px){
+    h1{font-size: 4.7vw}
+}
+
+.footer{
+    background-color: #F8F8F7;
+    margin:0;
+    margin-top:120px;
+    padding: 30px; 
+}
+
+.footer-content{
+    margin:0;
+    max-width: 1000px;
+    margin:auto;
+    display: flex;
+    /**evenly distribute space b/w links in footer and make it so first link is aligned at start/left, last is aligned at end/right**/
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top:20px;
+    padding-bottom:auto;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: wrap;
+    /**create space b/w each link**/
+    gap: 0.5rem;
+
+}
+
+.footer a{
+    color:black;
+    text-decoration: none;
+    font-size:20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer-text {
+    color:black;
+    text-decoration: none;
+    font-size:20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.footer img{
+    float:right;
+    width: 350px;
+}
+
+.epen img{
+    height:290px;
+}
+
+.quote{
+    background-color: white;
+    border: solid 1px black;
+    padding:10px 30px 10px 30px;
+    border-radius: 8px;
+}
+
+.quote a{
+    color:black;
+    text-decoration: none;
+    font-size:20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    word-wrap: break-word;
+}
+
+.quote li{
+    padding-bottom: 10px;
+}
+
+.quote a:hover{
+    font-weight:bold;
+    color:#6B9990;
+}
+
+.quote2{
+    margin-top: 30px;
+    margin-bottom:30px;
+    background-color: white;
+    border: solid 1px black;
+    padding:10px 30px 10px 30px;
+    border-radius: 8px;
+}
+
+.quote2 p{
+    font-weight:bold;
+    margin:0;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.grid img{
+    height:225px;
+}
+
+
+.zine1{
+    object-position: top;
+}
+
+.zine2{
+    object-position: top;
+}
+
+.zine5{
+    background-color: #F8F8F7;
+}
+
+.zine7{
+    object-position: top;
+}
