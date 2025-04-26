@@ -28,9 +28,6 @@ body{
 .sidebar li{
     list-style:none;
     padding:0;
-    padding-left:18px;
-    padding-top:10px;
-    padding-bottom:10px;
     font-size:20px;
     font-family: "Crimson Text", serif;
     font-weight: 400;
@@ -40,6 +37,10 @@ body{
 
 .sidebar a {
     display: block;
+    padding:0;
+    padding-left:18px;
+    padding-top:10px;
+    padding-bottom:10px;
     background-color: transparent;
     text-decoration: none;
   }
@@ -47,6 +48,10 @@ body{
 .sidebar .Mimeograph{
     margin: 0;
     color:black;
+    padding:0;
+    padding-left:18px;
+    padding-top:10px;
+    padding-bottom:10px;
     font-family: "Rubik Dirt", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -163,10 +168,6 @@ h2{
     padding-top:20px;
 }
 
-@media(max-width:560px){
-    .topnav a{font-size:1.5vh}
-}
-
 @media(max-width:768px){
     .sidebar {display: none;}
     .BeigeB{margin-left: 0px; width:100%;box-sizing:border-box; margin-right:0; max-width:none;}
@@ -187,7 +188,11 @@ h2{
         padding-top:20px;
         padding-bottom:20px;
       }
+}
 
+@media(max-width:560px){
+    .topnav a{font-size:1.5vh}
+    .BeigeB h1{font-size:5.6vw}
 }
 
 @media(min-width: 768px) and (max-width:983px){
@@ -342,4 +347,8 @@ h2{
 
 .zine7{
     object-position: top;
+}
+
+@media(min-width:0px) and (max-width:360px){
+    .topnav a{font-size:3.5vw}
 }
